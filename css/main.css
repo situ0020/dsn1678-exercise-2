@@ -109,6 +109,7 @@ body {
   opacity: 0;
 
   text-align: center;
+  transition: all 200ms linear;
 }
 
 .chart__count::after {
@@ -143,8 +144,14 @@ body {
 	background-color: rgba(204, 204, 204, 0.35);
 }
 
-.chart__item {
-	transition: all 500ms linear;
+.chart__item:hover .chart__count {
+	top: -4em;
+	opacity: 1.0;
 }
 
+.chart__item,
+.chart__label,
+.chart__bar {
+	transition: all 1000ms linear;
+ }
 	
